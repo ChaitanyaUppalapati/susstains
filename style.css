@@ -5,20 +5,43 @@
     list-style: none;
     text-decoration: none;
     max-width: 100%;
+    scroll-behavior: smooth;
 }
-.main{
+#main{
     background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(cover.jpeg);
     width: 100vw;   
     height: 100vh;
     background-size: cover;
 }
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 2;
+    width: 100vw;
+    max-height: 100px;
+    background-color: #0009;
+}
+.logo{
+    height: 90px;
+    width: auto;
+    margin-top: 10px;
+    margin-left: 60px;
+
+}
 .menubar{
+    min-height: 100px;
     text-align: center;
     float: right;
     margin-right: 100px;
 }
 .menubar ul{
     display: inline-flex;
+}
+.menubar ul ul{
+    background-color: #0009;
 }
 .menubar ul li{
     margin: 15px;
@@ -45,6 +68,8 @@
     position: absolute;
     margin-left: -5px;
     text-align: left;
+    margin-top: 5px;
+    width: 150px;
 }
 .dropdown ul li a{
     padding: 25px 60px 25px 0;
@@ -59,7 +84,7 @@
     position: absolute;
     display: block;
     margin-top: -40px;
-    margin-left: 100px;
+    margin-left: 120px;
 }
 .typer{
     color: #FFF;
@@ -76,13 +101,12 @@
     font-size: 15px;
     margin-left: 90px;
 }
-.about{
-    height: 40vh;
+#about{
+    height: auto;
     background-color: #FFF;
 }
 .text{
     padding: 70px 270px;
-    text-align: center;
 }
 h2{
     font-family: 'Montserrat', sans-serif;
@@ -94,8 +118,73 @@ h2{
 }
 .text p{
     font-size: 20px;
-    font-weight: 500;   
+    font-weight: 500;
+    padding-bottom: 20px;
 }
-.services{
-    height: 60vh;
+.text h3{
+    font-size: 20px;
+    padding: 15px 0px;
+}
+#services{
+    height: auto;
+    background-color: #f7f7f7;
+}
+.part1{
+    width: 60%;
+}
+.part1 ul{
+    padding-left: 40px;
+}
+.part1 li{
+    list-style: circle;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+.part2 img{
+    height: 300px;
+    width: 400px;
+}
+.slider-box{
+    width: 70vw;
+    height: auto;
+    padding: 50px 0px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #1e1e26;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+}
+.activation-reactor, .burner-steam, .condenser{
+    width: 20vw;
+    height: auto;
+    margin: 0px 10px;
+    border-radius: 5px;
+}
+.activation-reactor{
+    background-image: linear-gradient(rgba(256,256,256,0.4),rgba(256,256,256,0.4));
+}
+.burner-steam{
+    background-image: linear-gradient(rgba(256,256,256,0.4),rgba(256,256,256,0.4));
+}
+.condenser{
+    background-image: linear-gradient(rgba(256,256,256,0.4),rgba(256,256,256,0.4));
+}
+.title{
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.568);
+    position: relative;
+    text-align: center;
+    width: auto;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+#analysis{
+    background-color: #FFF;
 }
