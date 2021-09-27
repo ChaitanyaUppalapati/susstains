@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susstains Engineering Solutions LLP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="menubar">
+            <ul>
+                <li><a class="link" id="active" href="#">Home</a></li>
+                <li><a class="link" href="#">About</a></li>
+                <li><a class="link" href="#">Services</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">Design</a></li>
+                            <li class="secndmenu"><a href="#">Analysis</a>
+                                <div class="slidebar">
+                                    <ul>
+                                        <li><a href="#">CFD</a></li>
+                                        <li><a href="#">FEA</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Fabrication</a></li>
+                            <li><a href="#">UDFs</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="link" href="#">Team</a></li>
+                <li><a class="link" href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="typer">
+            <h1>Mechanical <span class="element"></span></h1>
+            <br>
+            <h5 class="caption">Services and Consulting startup by IIT Madras students.</h5>
+        </div>
+    </div>
+    <div class="about">
+        <div class="text">
+            <h2>About</h2>
+            <p>We, a group of qualified researchers from IIT Madras have built a platform to support industries and students with our engineering services and consulting in design, modelling, numerical simulation and custom fabrication. We have an R&D experience of over 7 years in the Mechanical domain. With this expertise, we are committed to provide the customers with the quality service.</p>
+        </div>
+    </div>
+    <div class="services">
+
+    </div>
+
+
+
+
+
+    <script src="typed.js"></script>
+    <script>
+        var options = {
+        strings: ['Design', 'Modelling', 'Analysis', 'Fabrication'],
+        typeSpeed: 80,
+        backSpeed:40,
+        loop:true
+        };
+        var typed = new Typed('.element', options);
+    </script>
+</body>
+</html>
