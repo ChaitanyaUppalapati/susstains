@@ -209,10 +209,13 @@ h2{
     box-shadow: 5px 10px 20px black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 .desc{
-    width: 250px;   
+    padding-top: 20px;
+    width: 250px;
+    height: 200px;
 }
 #contact{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/contact.jpg);
