@@ -58,6 +58,16 @@
 .link{
     line-height: 50px;
 }
+.fa-sort-down{
+    position: relative;
+    top: -3px;
+    left: 10px;
+}
+.fa-caret-right{
+    position: absolute;
+    left: 90px;
+    top: -0px;
+}
 #active, .menubar ul li a:hover{
     color:rgb(89, 218, 89);
 }
@@ -74,6 +84,7 @@
 }
 .dropdown ul li a{
     padding: 25px 60px 25px 0;
+    width: max-content;
 }
 .menubar ul li:hover .dropdown ul{
     display: block;
