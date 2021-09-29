@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Susstains Engineering Solutions LLP</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
     <script src="typed.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico"/>
 </head>
 <body>
@@ -30,7 +32,7 @@
             <ul>
                 <li><a class="link" id="active" href="#main">Home</a></li>
                 <li><a class="link" href="#about">About</a></li>
-                <li><a class="link" href="#services">Services</a>
+                <li><a class="link" href="#services">Capabilities</a>
                     <div class="dropdown">
                         <ul>
                             <li><a href="#design">Design</a></li>
@@ -48,7 +50,7 @@
                     </div>
                 </li>
                 <li><a class="link" href="#team">Team</a></li>
-                <li><a class="link" href="#contact">Contact</a></li>
+                <li><a class="link" href="#contact">Connect</a></li>
             </ul>
         </div>
         </div>
@@ -60,12 +62,13 @@
     </section>
     <section id="about">
         <div class="text">
-            <h2>About</h2>
+            <h2>Who we are?</h2>
             <p>We, a group of qualified researchers from IIT Madras have built a platform to support industries and students with our engineering services and consulting in design, modelling, numerical simulation and custom fabrication. We have an R&D experience of over 7 years in the Mechanical domain. With this expertise, we are committed to provide the customers with the quality service.</p>
         </div>
     </section>
     <section id="services">
         <div id="design" class="text">
+            <h2>Capabilities</h2>
             <h2>Design</h2>
             <p>We are skilled in designing any kind of Mechanical components depending on the need of the customer. Team has expertise in theoretical design in the field of fluid, thermal and structural domain. We also offer CAD modelling services and support to develop fabrication diagram.</p>
             
@@ -223,6 +226,56 @@
     </section>
     <section id="contact">
         <h2>Contact</h2>
+        <div class="container">
+            <div class="left">
+                <div class="phone">
+                    <h3>Phone :</h3>
+                    <p>+91 9999999999</p>
+                    <p>+91 9999999999</p>
+                </div>
+                <div class="address">
+                    <h3>Address :</h3>
+                    <p>#4656-64466,Building name</p>
+                    <p>City,State</p>
+                    <p>Country PIN</p>
+                </div>
+                <div class="email">
+                    <h3>Mail :</h3>
+                    <p>name@domain.com</p>
+                </div>
+            </div>
+            <div class="right">
+                <h1>Connect with us</h1>
+                <form action="https://formspree.io/f/xoqybvyn" method="POST" form="my-form">
+                    <div>
+                        <label>Name:</label>
+                        <br>
+                        <input name="Name" type="text">
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <br>
+                        <input name="Mail Id" type="email">
+                    </div>
+                    <div>
+                        <label>Contact number:</label>
+                        <br>
+                        <input name="Mobile" type="number">
+                    </div>
+                    <div>
+                        <label>Message:</label>
+                        <br>
+                        <textarea name="Message" id="message"></textarea>
+                    </div>
+                
+                
+                
+                
+                <button id="my-form-button">Submit</button>
+                </form>
+                <div id="status"></div>
+            </div>
+        </div>
     </section>
 
 
@@ -235,7 +288,7 @@
         };
         var typed = new Typed('.element', options);
     </script>
-
+    
 
     
 </body>
